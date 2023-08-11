@@ -1,5 +1,6 @@
 import { Counter } from "./components/counter/counter";
 import { Logo } from "./components/logo/logo";
+import "@picocss/pico";
 
 export default () => {
   return (
@@ -8,9 +9,12 @@ export default () => {
         <meta charSet="utf-8" />
         <title>Qwik Blank App</title>
       </head>
+
       <body>
-        <Logo />
-        <Counter />
+        <main class="container">
+          <Logo />
+          <Counter />
+        </main>
       </body>
     </>
   );
