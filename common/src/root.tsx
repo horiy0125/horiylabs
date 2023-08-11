@@ -1,4 +1,4 @@
-import { Footer } from "./components";
+import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import "@picocss/pico";
 
