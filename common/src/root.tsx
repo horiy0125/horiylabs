@@ -1,5 +1,5 @@
-import { Counter } from "./components/counter/counter";
-import { Logo } from "./components/logo/logo";
+import { Footer } from "./components";
+import { Header } from "./components/header";
 import "@picocss/pico";
 
 export default () => {
@@ -11,10 +11,13 @@ export default () => {
       </head>
 
       <body>
+        <Header />
+
         <main class="container">
-          <Logo />
-          <Counter />
+          <h1>Qwik Blank App</h1>
         </main>
+
+        <Footer />
       </body>
     </>
   );
