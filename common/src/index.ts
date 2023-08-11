@@ -1,4 +1,4 @@
-export { Header } from "./components/header";
-export { Footer } from "./components/footer";
+export { Header } from "./components/header/header";
+export { Footer } from "./components/footer/footer";
 
 export type { BaseProps, Matrix } from "./types";

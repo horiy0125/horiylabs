@@ -1,6 +1,6 @@
-import { Footer } from "./components/footer";
-import { Header } from "./components/header";
 import "@picocss/pico";
+import { Header } from "./components/header/header";
+import { Footer } from "./components/footer/footer";
 
 export default () => {
   return (
