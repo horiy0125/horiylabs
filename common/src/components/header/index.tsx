@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
+import { BaseProps } from "../../types";
 
-type Props = {};
-
-export const Header = component$((props: Props) => {
-  return <header></header>;
+export const Header = component$((props: BaseProps) => {
+  return <header class={props.class}></header>;
 });
