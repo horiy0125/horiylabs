@@ -1,6 +1,6 @@
 {
   "name": "@horiy0125/common",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Qwik component library",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
