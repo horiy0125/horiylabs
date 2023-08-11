@@ -8,4 +8,4 @@ run:
 
 .PHONY: deploy/build
 deploy/build:
-	npm run build.server
+	npm run build
