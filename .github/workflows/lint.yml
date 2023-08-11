@@ -10,6 +10,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: lint
-        run: make -C client ci/fmt ci/lint
+      - uses: actions/setup-node@v3
+      - run: make -C client init ci/fmt ci/lint
