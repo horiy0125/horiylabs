@@ -12,7 +12,8 @@ fmt:
 
 .PHONY: build
 build:
-	npm run build
+	npm run build.lib
+	npm run build.types
 
 .PHONY: publish
 publish:
