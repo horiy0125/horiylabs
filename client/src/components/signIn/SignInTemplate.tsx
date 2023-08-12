@@ -1,8 +1,10 @@
-import { useNavigate } from 'react-router-dom';
+import { useCallback } from 'react';
 import { BaseTemplate } from '../BaseTemplate';
 
 export const SignInTemplate: React.FC = () => {
-  const navigate = useNavigate();
+  const onClick = useCallback(() => {
+    window.location.href = 'https://blog.horiy.dev';
+  }, []);
 
   return (
     <BaseTemplate>
@@ -15,9 +17,7 @@ export const SignInTemplate: React.FC = () => {
             <h3>管理者アカウントでログインしてください。</h3>
           </hgroup>
 
-          <button onClick={() => navigate('https://blog.horiy.dev')}>
-            Googleアカウントでログイン
-          </button>
+          <button onClick={onClick}>Googleアカウントでログイン</button>
         </article>
       </section>
     </BaseTemplate>
