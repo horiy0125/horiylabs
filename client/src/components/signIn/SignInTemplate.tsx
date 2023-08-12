@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import { BaseTemplate } from '../BaseTemplate';
 
 export const SignInTemplate: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <BaseTemplate>
       <h1>horiylabs</h1>
@@ -12,7 +15,9 @@ export const SignInTemplate: React.FC = () => {
             <h3>管理者アカウントでログインしてください。</h3>
           </hgroup>
 
-          <button>Googleアカウントでログイン</button>
+          <button onClick={() => navigate('https://blog.horiy.dev')}>
+            Googleアカウントでログイン
+          </button>
         </article>
       </section>
     </BaseTemplate>
