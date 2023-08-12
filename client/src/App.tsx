@@ -1,13 +1,13 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { pageRoutes } from './config/pageRoutes';
+import { IndexTemplate } from './components/index/IndexTemplate';
+
 export const App: React.FC = () => {
   return (
-    <>
-      <header></header>
-
-      <main className="container">
-        <h1>horiylabs</h1>
-      </main>
-
-      <footer></footer>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path={pageRoutes.index} element={<IndexTemplate />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
