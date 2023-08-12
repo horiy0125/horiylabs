@@ -3,7 +3,10 @@ import { BaseTemplate } from '../BaseTemplate';
 export const IndexTemplate: React.FC = () => {
   return (
     <BaseTemplate>
-      <h1>horiylabs</h1>
+      <div className="headings">
+        <h1>horiylabs</h1>
+        <p>ようこそ</p>
+      </div>
     </BaseTemplate>
   );
 };
