@@ -1,4 +1,4 @@
-import { BaseTemplate } from '../BaseTemplate';
+import { BaseTemplate } from '../common/BaseTemplate';
 
 export const IndexTemplate: React.FC = () => {
   return (
